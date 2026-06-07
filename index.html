@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mokgotho's Barber Shop — Precision. Grit. Legacy.</title>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="header">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <i data-lucide="scissors" class="logo-icon"></i>
+      <span class="logo-text">MOKGOTHO'S<span class="logo-highlight"> · </span>BARBER SHOP</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#barbers" class="nav-link">Barbers</a>
+      <a href="#visit" class="nav-link">Visit</a>
+    </nav>
+    <button id="globalBookBtn" class="btn-primary">Book Now</button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Est. 2018 · Master Barbers</div>
+      <h1 class="hero-title">Sharp cuts. <span>Honest craft.</span><br>Your chair is ready.</h1>
+      <p class="hero-desc">Walk in unsure, walk out unmistakable. Book your seat with a master barber in under a minute.</p>
+      <div class="hero-buttons">
+        <button id="heroBookBtn" class="btn-primary btn-large">📅 Book an Appointment</button>
+        <a href="#services" class="btn-outline btn-large">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section - Hair Styles -->
+  <section id="services" class="container section-pad">
+    <div class="section-header">
+      <div class="section-tag">Choose a Style</div>
+      <h2 class="section-title">Hair Services & Pricing</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="services-grid">
+      <!-- Fade -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Fade</span>
+          <span class="service-price">R35</span>
+        </div>
+        <div class="service-desc">Classic fade cut, clean and precise.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 30 min
+          </span>
+          <button class="book-link" data-service="Fade">Book →</button>
+        </div>
+      </div>
+
+      <!-- Low Fade -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Low Fade</span>
+          <span class="service-price">R35</span>
+        </div>
+        <div class="service-desc">Subtle fade starting low near the ears.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 30 min
+          </span>
+          <button class="book-link" data-service="Low Fade">Book →</button>
+        </div>
+      </div>
+
+      <!-- High Fade -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">High Fade</span>
+          <span class="service-price">R35</span>
+        </div>
+        <div class="service-desc">Bold fade starting high on the sides.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 30 min
+          </span>
+          <button class="book-link" data-service="High Fade">Book →</button>
+        </div>
+      </div>
+
+      <!-- Buzz Cut -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Buzz Cut</span>
+          <span class="service-price">R25</span>
+        </div>
+        <div class="service-desc">Even all-over cut, low maintenance.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 20 min
+          </span>
+          <button class="book-link" data-service="Buzz Cut">Book →</button>
+        </div>
+      </div>
+
+      <!-- Afro -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Afro</span>
+          <span class="service-price">R45</span>
+        </div>
+        <div class="service-desc">Shape, trim, and style your natural afro.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 45 min
+          </span>
+          <button class="book-link" data-service="Afro">Book →</button>
+        </div>
+      </div>
+
+      <!-- Dreadlocks -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Dreadlocks</span>
+          <span class="service-price">R60</span>
+        </div>
+        <div class="service-desc">Retwist, styling, and maintenance.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 60 min
+          </span>
+          <button class="book-link" data-service="Dreadlocks">Book →</button>
+        </div>
+      </div>
+
+      <!-- Braids -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Braids</span>
+          <span class="service-price">R70</span>
+        </div>
+        <div class="service-desc">Cornrows, box braids, or custom styles.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 90 min
+          </span>
+          <button class="book-link" data-service="Braids">Book →</button>
+        </div>
+      </div>
+
+      <!-- Mohawk -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Mohawk</span>
+          <span class="service-price">R40</span>
+        </div>
+        <div class="service-desc">Bold strip cut with faded sides.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 40 min
+          </span>
+          <button class="book-link" data-service="Mohawk">Book →</button>
+        </div>
+      </div>
+
+      <!-- Taper -->
+      <div class="service-card">
+        <div class="service-header">
+          <span class="service-name">Taper</span>
+          <span class="service-price">R35</span>
+        </div>
+        <div class="service-desc">Gradual shortening, clean finish.</div>
+        <div class="service-footer">
+          <span class="duration-badge">
+            <i data-lucide="clock" style="width:14px;height:14px"></i> 30 min
+          </span>
+          <button class="book-link" data-service="Taper">Book →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Barbers Section -->
+  <section id="barbers" class="barbers-section">
+    <div class="container section-pad">
+      <div class="section-header">
+        <div class="section-tag">The Chair</div>
+        <h2 class="section-title">Meet your barber</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div id="barbersGrid" class="barbers-grid"></div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section id="visit" class="container section-pad">
+    <div class="visit-grid">
+      <div>
+        <div class="section-tag">Visit</div>
+        <h2 class="section-title">Come on through</h2>
+        <p class="visit-desc">We're tucked off Mercer Street. Free coffee, good talk, and a chair waiting for you.</p>
+        <ul class="info-list">
+          <li class="info-item"><i data-lucide="map-pin" class="info-icon"></i> 142 Mercer St, Studio 4 · Polokwane</li>
+          <li class="info-item"><i data-lucide="phone" class="info-icon"></i> (+27) 010-2210</li>
+          <li class="info-item"><i data-lucide="clock" class="info-icon"></i> Mon–Sat · 9am to 8pm</li>
+        </ul>
+        <button id="visitBookBtn" class="btn-primary visit-book-btn">Reserve Your Chair</button>
+      </div>
+      <div class="hours-card">
+        <h3 class="hours-title">Hours</h3>
+        <div class="hours-list">
+          <div class="hours-row"><span class="hours-day">Monday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Tuesday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Wednesday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Thursday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Friday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Saturday</span><span>9:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2025 Mokgotho's Barber Shop · Crafted with precision.</p>
+    <div class="footer-social">
+      <i data-lucide="instagram" class="social-icon"></i>
+      <i data-lucide="facebook" class="social-icon"></i>
+      <i data-lucide="twitter" class="social-icon"></i>
+    </div>
+  </div>
+</footer>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal-backdrop">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h3 class="modal-title">Book your chair</h3>
+      <button class="modal-close" id="closeModalBtn">✕</button>
+    </div>
+    <div id="modalBody" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
